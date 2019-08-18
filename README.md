@@ -10,6 +10,11 @@ To start your application in the dev profile, simply run:
 
 For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
 
+## Test Containers
+
+    .\mvnw test -D spring.profiles.active=testcontainers
+    .\mvnw verify -D spring.profiles.active=testcontainers
+
 ## Building for production
 
 ### Packaging as jar
