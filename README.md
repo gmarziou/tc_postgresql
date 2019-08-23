@@ -15,6 +15,19 @@ For further instructions on how to develop with JHipster, have a look at [Using 
     .\mvnw test -D spring.profiles.active=testcontainers
     .\mvnw verify -D spring.profiles.active=testcontainers
 
+If you get this error:
+
+    Caused by: com.github.dockerjava.api.exception.NotFoundException: {"message":"pull access denied for postgis, repository does not exist or may require 'docker login': denied: requested access to the resource is denied"}
+
+You can login with `docker login`
+
+Alternatively, you can:
+
+- use your own docker registry (e.g. nexus)
+- use your own Dockerfile
+- customize testcontainers properties https://www.testcontainers.org/features/configuration/
+
+
 ## Building for production
 
 ### Packaging as jar

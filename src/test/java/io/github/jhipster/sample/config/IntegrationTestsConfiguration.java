@@ -23,7 +23,7 @@ public class IntegrationTestsConfiguration {
 
     @Bean
     public DataSource dataSource() {
-        dbContainer = new PostgreSQLContainer("postgres:9.4")
+        dbContainer = new PostgreSQLContainer("postgis:9.4")
             .withUsername("jhipstersampleapplication")
             .withPassword("");
         String jdbcUrlSuffix = "";
